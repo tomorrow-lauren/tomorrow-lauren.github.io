@@ -1,0 +1,8 @@
+* What did you learn about CSS padding, borders, and margin by doing this challenge?
+  * I learned that browsers have default values, I learned that every thing can be effected by which browser you're using. I learned that borders next to eachother look really clunky. I learned that tweaking those can be the difference between "Aw" and "Ew".
+* What did you learn about CSS positioning?
+  * That it can be all relative. I didn't use any, though now that I'm reflecting I REALLY probably should have, but as of right now, things seem to be ok, so I'm a little less worried about that. I learned that it all depends on what you want them to do, and window resize. responsive design is important.
+* What aspects of your design did you find easiest to implement? What was most difficult?
+  * I still can't do some of the stuff I know I could do with JS things. I find the small tweaks to be the most frustrating and time consuming. I find myself prone to tweaking things and it's probably not the most productive use of time.
+* What did you learn about adding and formatting elements with CSS in this challenge?
+  * I learned that I tend to just slap a class on it, rather than trying different elements. The tech-blog allowed me to learn a lot about inline. I like the semantic elements that let me manipulate certain parts of the page across the CSS, so less of my "SLAP A CLASS ON IT" tendencies have to manifests it.
