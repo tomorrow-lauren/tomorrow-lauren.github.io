@@ -1,0 +1,32 @@
+body {
+   background-color: #E4ECF2;
+   text-align:center;
+   font-family: Arial;
+   color: #2E3F4F;
+}
+.index-nav {
+  width: 100%;
+  margin: 0;
+  background-color: #C0C6CC;
+  padding: 0;
+  display: inline-block;
+  border-top: 3px solid gray;
+}
+.mainframe {
+  width: 75%;
+  height: 520px;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  border-bottom: 3px solid gray;
+
+}
+a {
+  display: inline-block;
+  padding: 0.5em;
+}
+.tiny {
+  font-size:8px;
+}
+header {
+  text-align: center;
+}

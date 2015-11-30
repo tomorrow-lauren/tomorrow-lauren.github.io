@@ -1,0 +1,35 @@
+body {
+background-color: #E4ECF2;
+
+text-align: center;
+}
+.blog-nav {
+  width: 90%;
+  margin: 0;
+  background-color: gray;
+  padding: 10px;
+  display: inline-block;
+}
+.d-blog {
+  background-color: aliceblue;
+  border: 1px dotted gray;
+  margin-left:10px;
+  padding:10px;
+}
+.threesix{
+  text-align: left;
+}
+a {
+  padding: .2em;
+}
+a:visited {
+  color: #E4ECF2;
+}
+.blogframe {
+  width: 85%;
+  height: 500px;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  border-bottom: 3px solid gray;
+
+}
