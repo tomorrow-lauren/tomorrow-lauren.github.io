@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"> <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body class="threesix">
+  <h1>Arrays V. Hashes</h1>
+<h2>Let's Re-iterate It!</h2>
+    <h3>What is an Array?</h3>
+      <div>
+        <p>
+          Arrays are a structured and ordered list. You can put any object in an Array. It's basically like placing numbered bullets in a gun. They are all going to come out in the same order. You can pop or push them out to rearrange or discard them. However, they aren't really linked to any other values. The bonus to being so firmly ordered is that it makes them easy to manipulate by order. You could have lemmings_array, and use the iterator to have them do something.</p>
+        <p>
+          lemmings_array.each do |lemmings| <br>
+            # something inane, because lemmings <br>
+          end<br>
+        </p>
+        <p>But you can also iterate over a hash with .each so...
+      </div>
+    <h3>What is a Hash?</h3>
+      <div>
+        <p>Hashes are lists of items. They are paired, one key goes to a value. You give a key and get a value, like a dictionary. Now keys are unique - keys cannot have more than one value. However one value can have many keys. For example, if we were to use characters from the musical Hamilton as keys, we could see the values:</p>
+             <p>cast_ham = { <br>
+                "Hamilton" => "Young, scrappy, and hungry",<br>
+                "Burr" => "talk less, smile more",<br>
+                "my country" =. "young, scrappy, and hungry",<br>
+                "Lafayette" => "America's favorite fighting Frenchman",<br>
+                "Angelica" => " ILU ALEX",<br>
+                "Eliza" => "ILU ALEX"<br>
+                }</p><br>
+           </div>
+         <h3>Differences!</h3>
+           <div>
+             <p>Now, to emphasize the differences - Arrays are singular objects in a very hierarchal and manipulative order. Hashes are a loose [only in recent iterations of Ruby are they even remotely ordered] collection of paired items - like a dictionary. </p>
+        </div>
+  </body>
+ </head>
+  </body>
+</html>
