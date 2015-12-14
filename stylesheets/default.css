@@ -29,6 +29,9 @@ a {
 .tiny {
   font-size:8px;
 }
+.strip{
+   padding:0;
+}
 header {
   text-align: center;
 }
