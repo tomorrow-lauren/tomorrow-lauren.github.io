@@ -28,6 +28,7 @@ a {
 }
 .tiny {
   font-size:8px;
+  text-align:center;
 }
 .strip{
    padding:0;
