@@ -46,7 +46,6 @@ footer {
   padding: 0;
 }
 .profile{
-  float: right;
   margin-right: 75%;
   display: inline-block;
 }
@@ -55,4 +54,14 @@ footer {
   float: right;
   margin: 0;
   padding: 0;
+}
+.content {
+}
+
+.content img {
+    margin-right: 15px;
+    float: right;
+}
+about_body{
+  text-align: left;
 }
