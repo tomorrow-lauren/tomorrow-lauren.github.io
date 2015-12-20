@@ -17,9 +17,9 @@
     <span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span>
   <span style="color: #008800; font-weight: bold">end</span>
 </div></pre>
-<p>Here, we set the inputs to <em>instance variables</em>. <em>instance variables</em> are different from <em>local variables</em> because they can transcend methods, and be used at any time. This makes it easier to store information with the creation of our class.But now what?</p>
+<p>Here, we set the inputs to <em>instance variables</em>. <em>instance variables</em> are different from <em>local variables</em> because they can transcend methods, and be used at any time. Local variables don't exist outside the methods they are called in. This makes instance variables more  useful to store information across our class. But now what?</p>
 <h3>DANCE CLASS DANCE</h3>
-<p>Now we have to write things that this class can DO! After all, what's a gamer who doesn't game? They're not whole without a console to game upon. </p>
+<p>Now we have to write things that this class can DO! After all, what's a gamer who doesn't game? They're not whole without a console to game upon. I know! Let's give them the ability to take a game and play it. </p>
   <div class="Ruby"> <pre>
   <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">play_game</span>(request, console)
     <span style="color: #3333BB">@console</span> <span style="color: #333333">=</span> console
@@ -32,15 +32,16 @@
         <span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;</span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@name</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> is now playing </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@game</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> on their </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@console</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0">&quot;</span>
       <span style="color: #008800; font-weight: bold">end</span>
     }
-  <span style="color: #008800; font-weight: bold">end</span>
-
+  <span style="color: #008800; font-weight: bold">end</span></div></pre>
+  <p>Ok, whoa. That's a lot of info. Let's talk about what is actually going on here. First, we take the request [and set the console to a <em>instance variable</em> so we can have it any time] and make sure the <em>Gamer</em> has the game! Otherwise we return the fact that they don't to the method. If they DO have it, we breakout another instance variable, this time <em>@game</em>, and change our variable from the initialization of the method <em>@playing</em> to true. Why? Because Later we're going to write method to check what's being played and a method to stop playing. Anyway, then we return a string saying what the gamer is now playing. But what if we want them to stop?</p>
+  <div class="Ruby"><pre>
   <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">stop_playing</span>(reason)
     <span style="color: #3333BB">@playing</span> <span style="color: #333333">=</span> <span style="color: #003388; font-weight: bold">false</span>
     <span style="color: #3333BB">@reason</span> <span style="color: #333333">=</span> reason
     <span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;</span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@name</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> stopped playing, because </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@reason</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0">&quot;</span>
-  <span style="color: #008800; font-weight: bold">end</span>
-
-  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">is_playing?</span>()
+  <span style="color: #008800; font-weight: bold">end</span></div></pre>
+  <p>So, this is a pretty straight forward method. Very readable, if I do say so myself [Yeah, obviously I do but I'm still proud of it haha]. You give a reason [as an input] for the <em>Gamer</em> to stop playing, and they will! Perhaps it's unneeded to store the input reason as <em>@reason</em>, but we do repeat it later on when someone asks us if we're not playing. In fact, let's look at a method I cooked up for that! </p>
+  <div class="Ruby"><pre><span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">is_playing?</span>()
     <span style="color: #008800; font-weight: bold">if</span> <span style="color: #3333BB">@playing</span> <span style="color: #333333">==</span> <span style="color: #003388; font-weight: bold">true</span>
       <span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;</span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@name</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> is still playing </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@game</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> on their </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@console</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0">&quot;</span>
     <span style="color: #008800; font-weight: bold">elsif</span> <span style="color: #3333BB">@reason</span> <span style="color: #333333">!=</span> <span style="color: #003388; font-weight: bold">nil</span>
@@ -48,12 +49,17 @@
     <span style="color: #008800; font-weight: bold">else</span>
       <span style="background-color: #fff0f0">&quot;</span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@name</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> isn&#39;t playing anything yet!&quot;</span>
     <span style="color: #008800; font-weight: bold">end</span>
-  <span style="color: #008800; font-weight: bold">end</span>
- <span style="color: #008800; font-weight: bold">end</span>
-
+  <span style="color: #008800; font-weight: bold">end</span></div></pre>
+  <p>Here we go again, one of thos fancy flip methods. Let's go through <em>is_playing</em> if by if. <em>If</em> the <em>Gamer</em> is playing something, we return it. <em>If</em> the gamer has a <em>@reason</em> for not playing, we return that. Otherwise, we let them know that <em>Gamer</em> isn't playing anything! That's all I have planned for this class! I guess that's all? Oh WAIT</p>
+  <div class="Ruby"><pre>
+ <span style="color: #008800; font-weight: bold">end</span></div></pre>
+ <p>Classes need <em>end</em>s too, otherwise you'll get some gnarly errors. Well, that's it. <em>Gamer</em> class built. Nothing else to do. Right? WRONG. The best thing you can do for a class you just wrote is test it. This is called <em>driver code</em>! It allows you to look at some examples of your code. So let's initialize some examples:</p>
+<div class="Ruby"><pre>
 <span style="color: #003366; font-weight: bold">JonJon</span> <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">Gamer</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&quot;Jon&quot;</span>, <span style="color: #333333">[</span><span style="background-color: #fff0f0">&quot;SR3&quot;</span>, <span style="background-color: #fff0f0">&quot;Star Wars&quot;</span><span style="color: #333333">]</span>)
 <span style="color: #003366; font-weight: bold">Lauren</span> <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">Gamer</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&quot;Lauren&quot;</span>, <span style="color: #333333">[</span><span style="background-color: #fff0f0">&quot;Fallout 4&quot;</span>,<span style="background-color: #fff0f0">&quot;DA:Origins&quot;</span>, <span style="background-color: #fff0f0">&quot;Hyrule Warriors&quot;</span>, <span style="background-color: #fff0f0">&quot;Rare Replay&quot;</span><span style="color: #333333">]</span>)
-
+</div></pre>
+<p> Look! We made <em>Gamer</em>s! Tey've got names and a library of games.. but do the methods work?</p>
+  <div class="Ruby"><pre>
 <span style="color: #007020">p</span> <span style="color: #003366; font-weight: bold">JonJon</span><span style="color: #333333">.</span>play_game(<span style="background-color: #fff0f0">&quot;SR3&quot;</span>,<span style="background-color: #fff0f0">&quot;XBox360&quot;</span>)
 <span style="color: #007020">p</span> <span style="color: #003366; font-weight: bold">JonJon</span><span style="color: #333333">.</span>is_playing?()
 <span style="color: #007020">p</span> <span style="color: #003366; font-weight: bold">JonJon</span><span style="color: #333333">.</span>stop_playing(<span style="background-color: #fff0f0">&quot;CUZ&quot;</span>)
@@ -61,15 +67,8 @@
 <span style="color: #007020">p</span> <span style="color: #003366; font-weight: bold">Lauren</span><span style="color: #333333">.</span>play_game(<span style="background-color: #fff0f0">&quot;Star Wars&quot;</span>,<span style="background-color: #fff0f0">&quot;XBox360&quot;</span>)
 <span style="color: #007020">p</span> <span style="color: #003366; font-weight: bold">Lauren</span><span style="color: #333333">.</span>is_playing?()
 </pre></div>
-
-
-    <h3>Instance vs Local variables</h3>
-        <p></p>
-      <br>
-    <h3>Sect 3</h3>
-           <div>
-             <p>stuff</p>
-        </div>
-        <a class="back" href="index.html">BACK</a>
+<p>First, we print them to the screen so we can verify that the methods work! Do they? Yes! We get the correct answer. If you don't believe me, ask the dishes. Er, or you can ruby it. Trust me :)</p>
+<p>So that's it! We made a <em>GAMER</em> class. Now you know how to build classes, initialize, the difference between local and instance variables, and much more! If you need anymore information, feel free to contact me! Have a great day</p>
+<a class="back" href="index.html">BACK</a>
   </body>
 </html>
