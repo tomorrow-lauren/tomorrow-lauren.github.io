@@ -42,3 +42,19 @@ a:visited {
   padding: 10px;
   display: inline-block;
 }
+.Ruby {
+  background: #ffffff;
+  overflow:auto;
+  width:auto;
+  border:solid gray;
+  border-width:.1em .1em .1em .8em;padding:.2em .6em;
+  }
+em {
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: Impact;
+}
+pre {
+  margin: 0;
+  line-height: 125%
+}
