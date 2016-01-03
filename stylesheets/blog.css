@@ -20,10 +20,11 @@ text-align: center;
   text-align: left;
 }
 a {
+  color: #C0C6CC;
   padding: .2em;
 }
 a:visited {
-  color: #E4ECF2;
+  color: black;
 }
 .blogframe {
   width: 85%;
