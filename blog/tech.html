@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"> <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body class="threesix">
+  <h1>SQLinjection</h1>
+<h2>Don't Drop the Table</h2>
+    <h3>What is SQL Injection?</h3>
+      <div>
+        <p>A SQL injection is when a malicious user inserts SQL commands or such to attack the database in which they are inserting the commands. First ingredient required is an unsecured SQL database. Then forms to search this database. Using these, hackers can attempt to gain and mainpulate data from the database</p>
+      </div>
+    <h3>How the Attack Works</h3>
+      <div>
+        <p><img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png"></p>
+        <p>Basically, if you enter a SQL command in the form for an unsecured data. The mother in the above comic is illustrating that the name she gave her child will result, in any unsecured database, the table of students to be dropped. A hacker could even enter as simple of a comand as "=", given that the could could return true, and give them access.</p></div>
+    <h3>How to protect Your databases</h3>
+      <div>
+        <p>You could blacklist the inputs that would cause this, however, often the commands, like drop, are legitimate entry options. You wouldn't block someone from looking up "when the bass drops", because we all need to know. Parameterized queries [prepared statements with variable binding] should be used. The use and practice with these will allow the coders to teach the database the differene between data and code. The implementation of this is variable from language to language. <a href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet#Defense_Option_1:_Prepared_Statements_.28with_Parameterized_Queries.29">This article</a> has several recommendations broken down by language. You can also enter code that will escape out of any user entry, but it is frail. This is best saved for legacy code, that needs to be grandfathered in but also kept safe.</p>
+      </div>
+    <h3>Conclusions</h3>
+      <div>
+        <p>When learning to program SQL databases, protect them from malicious attacks by ensuring the database knows code from user input. Research methods to do this, and, if it's legacy code, try to at least escape out. Hopefully this has made things clear for you and you will know, when you go to program SQL databases, where to start. </p>
+        </div>
+        <a class="back" href="index.html">BACK</a>
+  </body>
+</html>
