@@ -2,16 +2,37 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <script type="text/javascript" src="default.js"></script>
     <title>Tomorrow's Lauren Today</title>
   </head>
    <body>
     <header><h1>A Name in Progress</h1></header>
-      <nav class="index-nav"><a href="about.html" target="iframe_index">About</a> |
-        <a href="index2.html" target="iframe_index">Portfolio</a> |
-        <a href="contact.html" target="iframe_index">Contact</a></div> |
-        <a href="blog/index.html" target="iframe_index">Blog</a>
-         |
-        <a href="projects/index.html" target="iframe_index">Projects</a>
+      <nav class="index-nav">
+        <div class="dropdown">
+          <button onclick="aboutDropFunction()"  class="dropbtn">About</button>
+            <div id="abouttodrop" class="dropdown-content">
+              <a href="about.html" target="iframe_index">Profile</a>
+              <a href="contact.html" target="iframe_index">Contact</a>
+            </div>
+        </div> |
+        <div class="dropdown">
+          <button  onclick="dropBlogFunction()" class="dropbtn">Blog</button>
+            <div id="myDropdown2" class="dropdown-content">
+            <a href="./blog/git.html" target="iframe_index">[GIT]</a>
+            <a href="./blog/css-concepts.html" target="iframe_index">[Inline/Block]</a>
+            <a href="./blog/arrays-hashes.html" target="iframe_index">[Array/Hash]</a>
+            <a href="./blog/enumerable-methods.html" target="iframe_index">[Enumerable#cycle]</a>
+            <a href="./blog/ruby-classes.html" target="iframe_index">[Ruby Classes]</a>
+            <a href="./blog/JavaScript.html" target="iframe_index">[JavaScript/Ruby]</a>
+            <a href="./blog/tech.html" target="iframe_index">[SQL Injections]</a>
+          </div></div> |
+        <div class="dropdown">
+          <button onclick="projectDropFunction()"  class="dropbtn">Projects</button>
+            <div id="myDropProject" class="dropdown-content">
+              <a href="./projects/cheat-sheet.html" target="iframe_index">Cheat Sheet</a>
+              <a href="./projects/index.html" target="iframe_index">Project Index</a>
+            </div>
+          </div>
         </nav>
         <main>
         <iframe class="mainframe" src="index2.html" name="iframe_index"></iframe>
