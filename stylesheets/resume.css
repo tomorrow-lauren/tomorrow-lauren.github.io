@@ -1,0 +1,33 @@
+.resume {
+  background-color: white;
+}
+.resume ul {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    overflow: hidden;
+}
+
+.resume li {
+    float: left;
+}
+.resume li a {
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.resume li a:hover {
+    background-color: #111;
+}
+.content ul{
+    list-style-type: none;
+    text-align: left;
+    text-decoration: none;
+}
+h3 {
+    background-color: white;
+}

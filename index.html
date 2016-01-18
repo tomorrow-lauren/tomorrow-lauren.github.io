@@ -2,15 +2,14 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-    <script type="text/javascript" src="default.js"></script>
     <title>Tomorrow's Lauren Today</title>
   </head>
    <body>
     <header><h1>A Name in Progress</h1></header>
       <nav class="index-nav">
         <div class="dropdown">
-          <button onclick="aboutDropFunction()"  class="dropbtn">About</button>
-            <div id="abouttodrop" class="dropdown-content">
+          <button class="dropbtn">About</button>
+            <div class="dropdown-content">
               <a href="about.html" target="iframe_index">Profile</a>
               <a href="contact.html" target="iframe_index">Contact</a>
             </div>
@@ -25,25 +24,26 @@
             <a href="./blog/ruby-classes.html" target="iframe_index">[Ruby Classes]</a>
             <a href="./blog/JavaScript.html" target="iframe_index">[JavaScript/Ruby]</a>
             <a href="./blog/tech.html" target="iframe_index">[SQL Injections]</a>
+            <a href="./blog/final-reflections.html" target="iframe_index">[Phase 0 Final Reflections]</a>
           </div></div> |
         <div class="dropdown">
           <button onclick="projectDropFunction()"  class="dropbtn">Projects</button>
             <div id="myDropProject" class="dropdown-content">
               <a href="./projects/cheat-sheet.html" target="iframe_index">Cheat Sheet</a>
+              <a href="./projects/resume.html" target="iframe_index">Resume</a>
               <a href="./projects/index.html" target="iframe_index">Project Index</a>
             </div>
           </div>
         </nav>
-        <main>
-        <iframe class="mainframe" src="index2.html" name="iframe_index"></iframe>
-</main>
-<footer>
-    <a href="http://twitter.com/tomorrow_lauren"><img src="imgs/Twitter.png" title="@tomorrow_lauren"></a>
-    <a href="mailto:lauren.g.reid@gmail.com?Subject=Contact%20via%20your%20site" target="_top"><img src="imgs/Email.png" title="Email to lauren.g.reid@gmail.com"></a>
-    <a href="https://github.com/tomorrow-lauren"><img src="imgs/Share.png" title="Git Hub"></a>
-    <a href="https://www.linkedin.com/in/laurengreid"><img src="imgs/LinkedIn.png" title="LinkedIn"></a>
+      <div class="sidebar">
+    <a href="http://twitter.com/tomorrow_lauren"><img src="imgs/Twitter.png" title="@tomorrow_lauren"></a><br>
+    <a href="mailto:lauren.g.reid@gmail.com?Subject=Contact%20via%20your%20site" target="_top"><img src="imgs/Email.png" title="Email to lauren.g.reid@gmail.com"></a><br>
+    <a href="https://github.com/tomorrow-lauren"><img src="imgs/Share.png" title="Git Hub"></a><br>
+    <a href="https://www.linkedin.com/in/laurengreid"><img src="imgs/LinkedIn.png" title="LinkedIn"></a><br>
     <a href="https://plus.google.com/114367637570962916319"><img src="imgs/GooglePlus.png" title="Google+ Profile"></a>
-</footer>
-
+</div>
+      <main>
+        <iframe class="mainframe" src="index2.html" name="iframe_index"></iframe>
+      </main>
   </body>
 </html>
