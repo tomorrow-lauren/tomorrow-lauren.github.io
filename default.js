@@ -11,4 +11,10 @@ $(document).ready(function () {
     $("#g-icon").toggleClass("fa fa-arrow-down");
     $("#g-icon").toggleClass("fa fa-arrow-up");
   });
+  $("#codepen").on("click", "i", function(){
+    event.preventDefault();
+    $("#C-portfolio").toggleClass("hidden");
+    $("#c-icon").toggleClass("fa fa-arrow-down");
+    $("#c-icon").toggleClass("fa fa-arrow-up");
+  });
 });
