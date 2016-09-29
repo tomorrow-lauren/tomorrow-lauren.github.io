@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="default.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" id="font-awesome-css" media="screen">
     <title>Tomorrow's Lauren Today</title>
   </head>
   <body>
-    <header><h1>A Name in Progress</h1></header>
-      <nav class="index-nav">
-        <div class="dropdown">
-          <button class="dropbtn">About</button>
-            <div class="dropdown-content">
-              <a href="about.html" target="iframe_index">Profile</a>
-              <a href="contact.html" target="iframe_index">Contact</a>
-            </div>
-        </div> |
-        <div class="dropdown">
-          <button onclick="dropBlogFunction()" class="dropbtn">Blog</button>
-            <div id="myDropdown2" class="dropdown-content">
-            <a href="./blog/git.html" target="iframe_index">[GIT]</a>
-            <a href="./blog/css-concepts.html" target="iframe_index">[Inline/Block]</a>
-            <a href="./blog/arrays-hashes.html" target="iframe_index">[Array/Hash]</a>
-            <a href="./blog/enumerable-methods.html" target="iframe_index">[Enumerable#cycle]</a>
-            <a href="./blog/ruby-classes.html" target="iframe_index">[Ruby Classes]</a>
-            <a href="./blog/JavaScript.html" target="iframe_index">[JavaScript/Ruby]</a>
-            <a href="./blog/tech.html" target="iframe_index">[SQL Injections]</a>
-            <a href="./blog/final-reflections.html" target="iframe_index">[Phase 0 Final Reflections]</a>
-          </div></div> |
-        <div class="dropdown">
-          <button onclick="projectDropFunction()" class="dropbtn">Projects</button>
-            <div id="myDropProject" class="dropdown-content">
-              <a href="./projects/cheat-sheet.html" target="iframe_index">Cheat Sheet</a>
-              <a href="./projects/cheat-sheet2.html" target="iframe_index">Cheat Sheet 2</a>
-              <a href="./projects/resume.html" target="iframe_index">Resume</a>
-              <a href="./projects/" target="iframe_index">Project Index</a>
-            </div>
-          </div>
-        </nav>
-      <div class="sidebar">
-    <a href="http://twitter.com/tomorrow_lauren"><img src="imgs/Twitter.png" title="@tomorrow_lauren"></a><br>
-    <a href="mailto:lauren.g.reid@gmail.com?Subject=Contact%20via%20your%20site" target="_top"><img src="imgs/Email.png" title="Email to lauren.g.reid@gmail.com"></a><br>
-    <a href="https://github.com/tomorrow-lauren"><img src="imgs/Share.png" title="Git Hub"></a><br>
-    <a href="https://www.linkedin.com/in/laurengreid"><img src="imgs/LinkedIn.png" title="LinkedIn"></a><br>
-    <a href="https://plus.google.com/114367637570962916319"><img src="imgs/GooglePlus.png" title="Google+ Profile"></a>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TOMORROW-LAUREN</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </li>
+      </ul>
+
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div id="about">
+    <div class="row rounded">
+      <div class="col-xs-8 col-md-6">
+      <p class="h3" id="about">Lauren Reid is a burgeoning web dev from Bloomington, Illinois. She loves the geeky, nerdy, and goofy things in life [which explains her fiance]. She has a bachelor's degree in Political Science from Knox College. These things make her the        target audience for Hamilton: The Musical. Her biggest quirk is probably not liking to order the same food as other people at restaurants.<p class="h3">She also has 3 years experience as a User Interface Designer, and a penchant for making third person bios.</p></div>
+      <img class="col-xs-8 col-md-6" src="http://tomorrow-lauren.github.io/imgs/about-profile.jpg">
+      </div>
+  </div>
+  <div class="bg-info rounded" id="portfolio">
+    <h1 class="text-center">Portfolio</h1>
+    <hr>
+    <div class="row"><p class="text-center rounded h4" id="SFQ"><i class="fa fa-arrow-down text-info" id="sf-icon" aria-hidden="true" title="Show images!"></i>   State Farm Quote Flow <sup><a href="https://www.statefarm.com/insurance/auto" target="_blank">[site]</a></sup>
+</p></div>
+    <div class="row center-block">
+      <div class="SFQ-portfolio hidden" id="SFQ-portfolio"><p class="text-center text-info">Roles: User Interface Designer, Tester</p>
+      <img class="col-xs-4 resizableImage center-block" src="https://s31.postimg.org/w5fnigqob/Screen_Shot_2016_07_13_at_16_11_51.png
+" class="resizableImage">
+      <img class="col-xs-4 resizableImage center-block" src="https://s31.postimg.org/a7j6oobnv/Screen_Shot_2016_07_13_at_16_13_47.png" class="resizableImage">
+      <img class="col-xs-4 resizableImage center-block" src="https://s32.postimg.org/tygxb9tat/Screen_Shot_2016_07_13_at_16_15_15.png"></div>
+    </div>
+    <hr>
+    <div class="row"><p class="text-center rounded h4" id="grouvie"><i class="fa fa-arrow-down text-info" id="g-icon" aria-hidden="true" title="Show images!"></i>   grouVie <sup><a href="https://github.com/msosland/grouVie-react" target="_blank">[react]</a></sup> <sup><a href="https://github.com/msosland/grouVie" target="_blank">[back-end]</a></sup></p></div>
+    <div class="row center-block"><div class="hidden" id="G-portfolio"><p class="text-center text-info">Roles: User Interface Designer, Graphic Designer, Tester, Front-End Developer</p>
+      <img class="col-xs-4 resizableImage" src="https://s32.postimg.org/ikpqyxedh/Simulator_Screen_Shot_Mar_14_2016_16_13_06.png">
+      <img class="col-xs-4 resizableImage" src="https://s32.postimg.org/75t9ub211/Screen_Shot_2016_03_17_at_13_56_32.png">
+      <img class="col-xs-4 resizableImage" src="https://s32.postimg.org/w0crodmv9/Screen_Shot_2016_03_17_at_17_06_54.png">
+    </div>
+  </div>
+  <div class="bg-info rounded" id="contact">
+    <div class="row center-block">
+      <div class="col-xs-1 col-md-3"><a href="http://twitter.com/tomorrow_lauren"><img src="http://tomorrow-lauren.github.io/imgs/Twitter.png" alt="@tomorrow_lauren"></a></div>
+    <div class="col-xs-1 col-md-3"><a href="mailto:lauren.g.reid@gmail.com?Subject=Contact%20via%20your%20site" target="_top"><img src="http://tomorrow-lauren.github.io/imgs/Email.png" alt="Email to lauren.g.reid@gmail.com"></a></div>
+    <div class="col-xs-1 col-md-3"><a href="https://github.com/tomorrow-lauren"><img src="http://tomorrow-lauren.github.io/imgs/Share.png" alt="Git Hub"></a></div>
+    <div class="col-xs-1 col-md-3"><a href="https://www.linkedin.com/in/laurengreid"><img src="http://tomorrow-lauren.github.io/imgs/LinkedIn.png" alt="LinkedIn"></a></div>
+    </div>
+    <p class="h3 text-center">Use one of the icons above in order to contact Ms. Reid.</p>
+  </div>
 </div>
-      <main>
-        <iframe class="mainframe" src="index2.html" name="iframe_index"></iframe>
-      </main>
 </body>
   </html>

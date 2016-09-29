@@ -1,51 +1,14 @@
-function aboutDropFunction() {
-    document.getElementById("abouttodrop").classList.toggle("show");
-}
-
-window.onhover = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-function dropBlogFunction() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-function projectDropFunction() {
-    document.getElementById("myDropProject").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+$(document).ready(function () {
+  $("#SFQ").on("click", "i", function(){
+    event.preventDefault();
+    $("#SFQ-portfolio").toggleClass("hidden");
+    $("#sf-icon").toggleClass("fa fa-arrow-down");
+    $("#sf-icon").toggleClass("fa fa-arrow-up");
+  });
+  $("#grouvie").on("click", "i", function(){
+    event.preventDefault();
+    $("#G-portfolio").toggleClass("hidden");
+    $("#g-icon").toggleClass("fa fa-arrow-down");
+    $("#g-icon").toggleClass("fa fa-arrow-up");
+  });
+});
