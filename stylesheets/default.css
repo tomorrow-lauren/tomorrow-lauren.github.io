@@ -1,19 +1,72 @@
-
-.resizableImage{
+.bg-dark-custom{
+  background-color: #555555;
+}
+#headingOne{
+  background-color: #666;
+  color:#ffffff;
 }
 
-.rounded {
-  padding: 2%;
-  border-radius: 10px;
-  margin: 2%;
-  background-color: #92A8D1;
+.fa-stack {
+  font-size: 18px;
 }
-hr {
-  margin: 5px;
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, #92A8D1, #fff, #92A8D1);
-  background-image: -moz-linear-gradient(left, #92A8D1, #fff, #92A8D1);
-  background-image: -ms-linear-gradient(left, #92A8D1, #fff, #92A8D1);
-  background-image: -o-linear-gradient(left, #92A8D1, #fff, #92A8D1);
+#jumbo{
+  background-color: #666;
+  background-image: url("../imgs/Untitled-1.jpg");
+  color: #fff;
+  padding: 6%;
+  background-size: cover;
+}
+
+.display{
+  background-color: #666;
+  color: #fff;
+}
+#portfolio, #about, #contact{
+  max-width: 75%;
+  margin: 3.25rem auto;
+}
+#aboutcontent{
+  padding: 2rem 0;
+  background-color: #555555;
+  color: #ffffff;
+}
+ #accordionExample{
+  width: 100%;
+ }
+#accordionExample .card,
+#accordionExample .card:last-child .card-header {
+  border: none;
+}
+ 
+#accordionExample .card-header {
+  border-bottom-color: #EDEFF0;
+  background: transparent;
+}
+ 
+#accordionExample .fa-stack {
+  font-size: 18px;
+}
+ #contactcontent{
+  height: 15rem;
+ }
+#accordionExample .btn {
+  width: 100%;
+  font-weight: bold;
+  color: #555555;
+  padding: 0;
+}
+ #contact .icons a{
+  font-size: 3rem;
+  color: #555555;
+ }
+ #contact .icons a:hover{
+  color: #888888;
+ }
+#accordionExample .btn-link:hover,
+#accordionExample .btn-link:focus {
+  text-decoration: none;
+}
+ 
+#accordionExample li + li {
+  margin-top: 10px;
 }

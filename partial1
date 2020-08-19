@@ -1,0 +1,67 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="default.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" id="font-awesome-css" media="screen">
+    <title>Tomorrow's Lauren Today</title>
+  </head>
+  <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TOMORROW-LAUREN</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </li>
+      </ul>
+
+     <!--  <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div id="about">
+    <div class="row rounded">
+      <div class="col-xs-8 col-md-6">
+      <p class="h4" id="about">Lauren Reid is a burgeoning web dev from Bloomington, Illinois. She loves the geeky, nerdy, and goofy things in life [which explains her fiance]. She has a bachelor's degree in Political Science from Knox College. These things make her the        target audience for Hamilton: The Musical. Her biggest quirk is probably not liking to order the same food as other people at restaurants.<p class="h4">She also has 3 years experience as a User Interface Designer, and a penchant for making third person bios.</p></div>
+      <img class="col-xs-5 col-md-5" src="http://tomorrow-lauren.github.io/imgs/about-profile.jpg">
+      </div>
+  </div>
+  <div class="bg-info rounded " id="portfolio">
+    <h1 class="text-center">Portfolio</h1>
+    <div class="portfolio_x rounded col-xs-2 col-md-4" id="UI/UX"> <a href="/portfolioUI"> UI/UX </a></div>
+    <div class="portfolio_x rounded col-xs-2 col-md-4" id="frontend"><a href="/portfolioWD"> Web Developer</a></div>
+  </div>
+  <div class="bg-info rounded center-block" id="contact">
+    <div class="row text-center">
+      <div class="col-xs-1 col-md-3"><a href="http://twitter.com/tomorrow_lauren"><img src="http://tomorrow-lauren.github.io/imgs/Twitter.png" alt="@tomorrow_lauren"></a></div>
+    <div class="col-xs-1 col-md-3"><a href="mailto:lauren.g.reid@gmail.com?Subject=Contact%20via%20your%20site" target="_top"><img src="http://tomorrow-lauren.github.io/imgs/Email.png" alt="Email to lauren.g.reid@gmail.com"></a></div>
+    <div class="col-xs-1 col-md-3"><a href="https://github.com/tomorrow-lauren"><img src="http://tomorrow-lauren.github.io/imgs/Share.png" alt="Git Hub"></a></div>
+    <div class="col-xs-1 col-md-3"><a href="https://www.linkedin.com/in/laurengreid"><img src="http://tomorrow-lauren.github.io/imgs/LinkedIn.png" alt="LinkedIn"></a></div>
+    </div>
+    <p class="h3 text-center">Use one of the icons above in order to contact Ms. Reid.</p>
+  </div>
+</div>
+</body>
+  </html>

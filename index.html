@@ -1,93 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	
+	<script src="default.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" id="font-awesome-css" media="screen">
+	<title>Tomorrow's Lauren Today</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom" id="top-up">
+		<a class="navbar-brand" href="#">tomorrow-lauren</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="jumbotron jumbotron-fluid" id="jumbo">
+		<div class="container-fluid">
+			<h1 class="display-3">Lauren Reid</h1>
+			<p class="lead">developer && stylist && designer</p>
+		</div>
+	</div>
+<div class="" id="container-fix">
+	<div id="portfoliocontent">
+		<div class="row" id="portfolio">
+			<h2 class="text-center col-sm-12 pb-5" id="portfolioHeader">Experience</h2>
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="mb-0">
+							<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Process Images (schemas, wireframes, etc)
+								<span class="fa-stack fa-sm">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+								</span>
+							</button>
+						</h2>
+					</div>
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="default.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" id="font-awesome-css" media="screen">
-    <title>Tomorrow's Lauren Today</title>
-  </head>
-  <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">TOMORROW-LAUREN</a>
-    </div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h2 class="mb-0">
+							<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Web Design (UI Design)
+								<span class="fa-stack fa-sm">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+								</span>
+							</button>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h2 class="mb-0">
+							<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Active code projects/portfolios
+								<span class="fa-stack fa-sm">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+								</span>
+							</button>
+						</h2>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </li>
-      </ul>
+	<div id="aboutcontent">
+		<div class="row" id="about">
 
-     <!--  <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
-    </div>
-  </div>
-</nav>
-<div class="container">
-  <div id="about">
-    <div class="row rounded">
-      <div class="col-xs-8 col-md-6">
-      <p class="h4" id="about">Lauren Reid is a fierce web designer originally from Normal, Illinois. She loves the geeky, nerdy, and goofy things in life [which explains her husband]. She has over 3 years of experience as a User Interface Designer, and a eye for stylish yet pixel perfect web design. She also has a bachelor's degree in Political Science from Knox College, with a minor in Film Studies.<p class="h4">She loves her adopted home of Seattle [but stop asking about rain], and a penchant for making third person bios.</p></div>
-      <img class="col-xs-8 col-md-6" src="http://tomorrow-lauren.github.io/imgs/about-profile.jpg">
-      </div>
-  </div>
-  <div class="bg-info rounded" id="portfolio">
-    <h1 class="text-center">Portfolio</h1>
-    <hr>
-    <div class="row"><p class="text-center rounded h4" id="SFQ"><i class="fa fa-arrow-down text-info" id="sf-icon" aria-hidden="true" title="Show images!"></i>   State Farm Quote Flow <sup><a href="https://www.statefarm.com/insurance/auto" target="_blank">[site]</a></sup>
-</p></div>
-    <div class="row center-block">
-      <div class="SFQ-portfolio hidden" id="SFQ-portfolio"><p class="text-center text-info">Roles: User Interface Designer, Tester</p>
-      <img class="col-xs-4 resizableImage center-block" src="https://s31.postimg.org/w5fnigqob/Screen_Shot_2016_07_13_at_16_11_51.png
-" class="resizableImage">
-      <img class="col-xs-4 resizableImage center-block" src="https://s31.postimg.org/a7j6oobnv/Screen_Shot_2016_07_13_at_16_13_47.png" class="resizableImage">
-      <img class="col-xs-4 resizableImage center-block" src="https://s32.postimg.org/tygxb9tat/Screen_Shot_2016_07_13_at_16_15_15.png"></div>
-    </div>
-    <hr>
-    <div class="row"><p class="text-center rounded h4" id="grouvie"><i class="fa fa-arrow-down text-info" id="g-icon" aria-hidden="true" title="Show images!"></i>   grouVie <sup><a href="https://github.com/msosland/grouVie-react" target="_blank">[react]</a></sup> <sup><a href="https://github.com/msosland/grouVie" target="_blank">[back-end]</a></sup></p>
-    <div class="row center-block"><div class="hidden" id="G-portfolio"><p class="text-center text-info">Roles: User Interface Designer, Graphic Designer, Tester, Front-End Developer</p>
-      <img class="col-xs-4 resizableImage" src="https://s32.postimg.org/ikpqyxedh/Simulator_Screen_Shot_Mar_14_2016_16_13_06.png">
-      <img class="col-xs-4 resizableImage" src="https://s32.postimg.org/75t9ub211/Screen_Shot_2016_03_17_at_13_56_32.png">
-      <img class="col-xs-4 resizableImage" src="https://s32.postimg.org/w0crodmv9/Screen_Shot_2016_03_17_at_17_06_54.png">
-    </div>
-  </div>
-  <hr>
-  <div class="row">
-    <p class="text-center rounded h4" id="codepen"><i class="fa fa-arrow-down text-info" id="c-icon" aria-hidden="true" title="Show images!"></i>   CodePen.io/FreeCodeCamp Portfolio <sup><a href="http://codepen.io/tomorrow-lauren/">[link]</a></sup></p></div>
-    <div><div class="hidden" id="C-portfolio"><p class="text-center text-info">Roles: User Interface Designer, Graphic Designer, Tester, Front-End Developer, etc</p>
-      <img class="col-xs-4 resizableImage" src="imgs/adatribute.png">
-      <img class="col-xs-4 resizableImage" src="imgs/wikiviewer.png">
-      <img class="col-xs-4 resizableImage" src="imgs/randomquote.png"></div>
-    </div>
-  </div>
-</div>
-  <div class="bg-info rounded center-block" id="contact">
-    <div class="row text-center">
-      <div class="col-xs-1 col-md-3"><a href="http://twitter.com/tomorrow_lauren"><img src="http://tomorrow-lauren.github.io/imgs/Twitter.png" alt="@tomorrow_lauren"></a></div>
-    <div class="col-xs-1 col-md-3"><a href="mailto:lauren.g.reid@gmail.com?Subject=Contact%20via%20your%20site" target="_top"><img src="http://tomorrow-lauren.github.io/imgs/Email.png" alt="Email to lauren.g.reid@gmail.com"></a></div>
-    <div class="col-xs-1 col-md-3"><a href="https://github.com/tomorrow-lauren"><img src="http://tomorrow-lauren.github.io/imgs/Share.png" alt="Git Hub"></a></div>
-    <div class="col-xs-1 col-md-3"><a href="https://www.linkedin.com/in/laurengreid"><img src="http://tomorrow-lauren.github.io/imgs/LinkedIn.png" alt="LinkedIn"></a></div>
-    </div>
-    <p class="h3 text-center">Use one of the icons above in order to contact Ms. Reid.</p>
-  </div>
+			<h2 class="text-center col-sm-12 pb-5">About Me</h2>
+			<div class="col-sm-8">
+				<p>
+					I am a developer, stylist and designer. I pride myself on my ability to create beautiful and meaningful things to clients' specifications. I like to bring spontaneity and creativity to a team, and work to create a solid bond with my coworkers to allow for the best possible working environment.
+				</p>
+				<p>
+					After working as a UI Designer and consultant, I transitioned to development. With my deft hand at empathy, tech wizardry, not to mention fast learning skills, I have hit the ground running. I work hard to ensure I meet not only client's standards, but my own - and they are pixel perfect. 
+				</p>
+				<p>
+					I really love being in a field that really allows me to challenge myself. I do that even now by starting to learn even more languages and frameworks - I’m studying C#, PHP, and ReactJS now. Feel free to reach out 
+				</p> 
+			</div>
+			<div class="col-sm-3">
+				<img src="./imgs/about-profile.jpg"/ alt="" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	<div id="contactcontent">
+		<div class="row" id="contact">
+			<h2 class="text-center col-sm-12 py-4">Contact</h2>
+<div class="col-xs-1 col-md-2 icons text-center">
+				<a href="https://codepen.io/tomorrow-lauren"><i class="fab fa-codepen"></i></a>
+			</div>
+			<div class="col-xs-1 col-md-2 icons text-center">
+				<a href="http://twitter.com/tomorrow_lauren"><i class="fab fa-twitter"></i></a>
+			</div>
+			<div class="col-xs-1 col-md-2 icons text-center">
+				<a href="mailto:lauren.g.reid@gmail.com?Subject=Hello!%20I%20am%20contacting%20you%20via%20your%20website" target="_top" alt="Email to lauren.g.reid@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
+			</div>
+			<div class="col-xs-1 col-md-2 icons text-center">
+				<a href="https://github.com/tomorrow-lauren"><i class="fab fa-github-alt"></i></a>
+			</div>
+			<div class="col-xs-1 col-md-2 icons text-center">
+				<a href="https://www.linkedin.com/in/laurengreid"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<div class="col-xs-1 col-md-2 icons text-center">
+				<a href="#top-up"><i class="far fa-caret-square-up"></i></a>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
-  </html>
+</html>
