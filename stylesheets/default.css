@@ -5,7 +5,9 @@
   background-color: #666;
   color:#ffffff;
 }
-
+.smole-icon{
+  height: 2rem;
+}
 .fa-stack {
   font-size: 18px;
 }
@@ -16,12 +18,13 @@
   padding: 6%;
   background-size: cover;
 }
-
+.blog-buttons{
+}
 .display{
   background-color: #666;
   color: #fff;
 }
-#portfolio, #about, #contact{
+#portfolio, #about, #contact,  #contact2{
   max-width: 75%;
   margin: 3.25rem auto;
 }
@@ -47,7 +50,7 @@
   font-size: 18px;
 }
  #contactcontent{
-  height: 15rem;
+  height: 30rem;
  }
 #accordionExample .btn {
   width: 100%;
@@ -55,11 +58,11 @@
   color: #555555;
   padding: 0;
 }
- #contact .icons a{
+ #contact2 .icons a{
   font-size: 3rem;
   color: #555555;
  }
- #contact .icons a:hover{
+ #contact2 .icons a:hover{
   color: #888888;
  }
 #accordionExample .btn-link:hover,
@@ -69,4 +72,47 @@
  
 #accordionExample li + li {
   margin-top: 10px;
+}
+.hide {
+  display: none;
+}
+#arrow{
+  overflow: hidden;
+}
+
+#contact2 .icons a:hover + .hide {
+  display: block;
+  font-size: 1rem;
+  position: absolute;
+}
+/* from blog CSS */
+.Ruby {
+  background: #ffffff;
+  overflow:auto;
+  width:auto;
+  border:solid gray;
+  border-width:.1em .1em .1em .8em;
+  padding:.2rem .6rem;
+  margin-bottom: 1rem;
+  }
+.upper-bold {
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: Impact;
+}
+.pre-set {
+  margin: 0;
+  line-height: 125%
+}
+.variable-set-green{
+  color: #008800; 
+}
+.variable-set-red{
+  color: #BB0066;
+}
+.variable-set-blue{
+  color: #003388;
+}
+.in-string{
+  background-color: #eeeeee;
 }

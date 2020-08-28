@@ -17,17 +17,18 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom" id="top-up">
-		<a class="navbar-brand" href="#">tomorrow-lauren</a>
+		<a class="navbar-brand" href="#"><img src="imgs/flower.png" class="img-fluid smole-icon"/></a> 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#portfolio" class="nav-link">Process & Portfolio</a></li>
+				<li class="nav-item"><a href="#aboutcontent" class="nav-link">About</a></li>
 				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
 		</div>
+		<a class="navbar-brand" href="#"><img src="imgs/flower.png" class="img-fluid smole-icon"/></a> 
 	</nav>
 	
 	<div class="jumbotron jumbotron-fluid" id="jumbo">
@@ -36,113 +37,763 @@
 			<p class="lead">developer && stylist && designer</p>
 		</div>
 	</div>
-<div class="" id="container-fix">
-	<div id="portfoliocontent">
-		<div class="row" id="portfolio">
-			<h2 class="text-center col-sm-12 pb-5" id="portfolioHeader">Experience</h2>
-			<div class="accordion" id="accordionExample">
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<h2 class="mb-0">
-							<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-								Process Images (schemas, wireframes, etc)
-								<span class="fa-stack fa-sm">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-								</span>
-							</button>
-						</h2>
-					</div>
+	<div class="" id="container-fix">
+		<div id="portfoliocontent">
+			<div class="row" id="portfolio">
+				<h2 class="text-center col-sm-12 pb-5" id="portfolioHeader">Process & Portfolio</h2>
+				<div class="accordion" id="accordionExample">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									Beginning the Process
+									<span class="fa-stack fa-sm">
+										<i class="fas fa-circle fa-stack-2x"></i>
+										<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</button>
+							</h2>
+						</div>
 
-					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body">
+								<p>
+									I believe the start of the design process comes with meeting the client. Whether external or internal, learning about their wants and desires is essential to the process. 
+								</p>
+								<p>
+									During my 3+ years as a UI/UX designer (as a vendor at State Farm), I worked across multiple lines of business. I consulted with everyone from C-level suites to other designers on other teams. I built wireframes, database schemas, prototypes, and more.  
+								</p>
+								<p>
+									The most important thing I learned is that a plan beforehand saves so many meetings later. Every step should be discussed. As a Web Producer II at eventcore, I frequently had to plan ahead to assess how much time things would need (for billing). I am also involved in new product design, which also requires UI planning and testing.  
+								</p>
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-light py-4" data-toggle="modal" data-target="#process-modal">
+									Click to flip through some process images - wireframes, schemas, etc
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade bd-example-modal-lg" id="process-modal" tabindex="-1" role="dialog" aria-labelledby="processImages" aria-hidden="true" role="dialog">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header text-center">
+												<h5 class="modal-title" id="process-modal-title">process images</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<!-- Carosuel of process images -->
+												<div id="processControls" class="carousel slide" data-ride="carousel">
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img class="d-block w-100 img-fluid" src="imgs/schema.png" alt="First slide">
+														</div>
+														<div class="carousel-item">
+															<img class="d-block w-100 img-fluid" src="imgs/wireframe-cheat-sheet.png" alt="Second slide">
+														</div>
+														<div class="carousel-item img-fluid">
+															<img class="d-block w-100" src="imgs/schema-example.png" alt="Third slide">
+														</div>
+													</div>
+													<a class="carousel-control-prev" href="#processControls" role="button" data-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next" href="#processControls" role="button" data-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h2 class="mb-0">
+									<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Designing Beautiful and Meaningful Things With Others
+										<span class="fa-stack fa-sm">
+											<i class="fas fa-circle fa-stack-2x"></i>
+											<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+										</span>
+									</button>
+								</h2>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body">
+									<p class="pb-2">
+										I believe that in design, one must be open to change. On example is the app <a href="https://github.com/msosland/grouVie-react">grouvie</a>. Grouvie was a team project; I took design lead, thanks to my background in design and user experience. I started by crafting a palette, based around the idea person's favorite color. I created a few inital icons, and when we switch some colors around, revamped it to be more legible on a dark background.
+									</p>
+									<button type="button" class="btn btn-light py-4" data-toggle="modal" data-target="#design-modal">
+										The design process for the app
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade bd-example-modal-lg" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="design-modal-title">grouvie Designs and Revisions</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													
+													<!-- carousel of feedback projects -->
+													<div id="designControls" class="carousel slide" data-ride="carousel">
+														<div class="carousel-inner text-center">
+															<div class="carousel-item active">
+																<p>Palette of colors I took to the team</p>
+																<img class="mx-auto d-block img-fluid" src="imgs/pallette.png" alt="Initial design">
+															</div>
+															<div class="carousel-item">
+																<p>Initial design</p>
+																<img class="mx-auto d-block img-fluid" src="imgs/bright_icon.png" alt="Initial design">
+															</div>
+															<div class="carousel-item">
+																<p>design of icon after feedback</p>
+																<img class="mx-auto d-block img-fluid" src="imgs/darkcon.png" alt="a revamped, more accessible icon">
+															</div>
+															<div class="carousel-item">
+																<p>implemented icon in app</p>
+																<img class="mx-auto d-block img-fluid" src="imgs/grouvie-ss-two.png" alt="icon implemented">
+															</a>
+														</div>
+														<div class="carousel-item">
+															<p>implemented color design in app</p>
+															<img class="mx-auto d-block img-fluid" src="imgs/grouvie-ss-four.png" alt="colors implemented">
+														</div>
+													</div>
+													<a class="carousel-control-prev" href="#designControls" role="button" data-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next" href="#designControls" role="button" data-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end-->
+								<p class="pt-4">
+									I think that incorporating user and team feedback is incredibly important. For the above app, I also instigated user testing at multiple steps. I believe feedback is best if it follows the acronym ASK - actionable, specific, and kind. You can't grow without feedback. Having also pair programmed, I think one of the most difficult things is finding yourself working with people that you can't review their code without animosity.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingTwo">
-						<h2 class="mb-0">
-							<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Web Design (UI Design)
-								<span class="fa-stack fa-sm">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-								</span>
-							</button>
-						</h2>
-					</div>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Active Sites/Code that I Have Worked On
+									<span class="fa-stack fa-sm">
+										<i class="fas fa-circle fa-stack-2x"></i>
+										<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</button>
+							</h2>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="card-body">
+								<p>
+									There are many sites that are no longer live that that I have worked on. I wish I had gotten more screenshots of projects. However, I have prepared a handful of screenshots of projects I loved that you can look at or click through. I also added my CodePen and GitHub. More projects are always forthcoming, naturally.
+								</p>
+								<!-- carousel of active projects button-->
+								<button type="button" class="btn btn-light py-4" data-toggle="modal" data-target="#activeProjects-modal">
+									A Portfolio of (as of this posting) Live Websites
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade bd-example-modal-lg" id="activeProjects-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="activeProjects-modal-title">Click on the image to go to the live site</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+
+												<!-- carousel of active projects -->
+												<div id="activeProjectsControls" class="carousel slide" data-ride="carousel">
+													<div class="carousel-inner text-center">
+														
+														<div class="carousel-item active">
+															<p>eventcore.com</p>
+															<a href="https://www.eventcore.com/home" target="_blank">
+																<img class="mx-auto d-block img-fluid" src="imgs/eventcorescreenshot.png" alt="eventcore dot com screenshot">
+															</a>
+														</div>
+														<div class="carousel-item">
+															<p>Microsoft Inspire</p>
+															<a href="https://register.inspire.microsoft.com/" target="_blank">
+																<img class="mx-auto d-block img-fluid" src="imgs/inspireSG.png" alt="WebScreenshot of registering for Microsoft Inspire">
+															</a>
+														</div>
+														<div class="carousel-item">
+															<p>State Farm</p>
+															<a href="https://www.statefarm.com/insurance/auto" target="_blank">
+																<img class="mx-auto d-block img-fluid" src="imgs/statefarm-auto-flow-one.png" alt="State Farm auto flow screenshot">
+															</a>
+														</div>
+														<div class="carousel-item">
+															<p>CodePen</p>
+															<a href="https://codepen.io/tomorrow-lauren/" target="_blank">
+																<img class="mx-auto d-block img-fluid" src="imgs/codepenScrenGrab.png" alt="WebScreenshots of CodePen portfolio">
+															</a>
+														</div>
+														<div class="carousel-item">
+															<p>GitHub</p>
+															<a href="https://github.com/tomorrow-lauren" target="_blank">
+																<img class="mx-auto d-block img-fluid" src="imgs/githubscreenshot.png" alt="WebScreenshots of GitHub portfolio">
+															</a>
+														</div>
+														
+													</div>
+													<a class="carousel-control-prev" href="#activeProjectsControls" role="button" data-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next" href="#activeProjectsControls" role="button" data-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end-->
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<h2 class="mb-0">
-							<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Active code projects/portfolios
-								<span class="fa-stack fa-sm">
-									<i class="fas fa-circle fa-stack-2x"></i>
-									<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-								</span>
-							</button>
-						</h2>
-					</div>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					<!-- car end -->
+					<div class="card">
+						<div class="card-header" id="headingFour">
+							<h2 class="mb-0">
+								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Blogs!
+									<span class="fa-stack fa-sm">
+										<i class="fas fa-circle fa-stack-2x"></i>
+										<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</button>
+							</h2>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+							<div class="card-body">
+								<p>
+									One of my favorite requirements in my bootcamp, writing blogs always solidifies what I am learning. I am proud of the work that I put into these those many years ago, and I hope that you learn something, or at least enjoy my attempts at humor within them. Going forward, as I continue to learn, I plan to write more. 
+								</p>
+								<!--row of buttons -->
+								<div class="d-flex justify-content-center bd-highlight mb-3">
+									<!-- new git section starts -->
+
+									<div class="blog-buttons p-2 bd-highlight">
+										<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#gitblog-modal">
+											git-ting it done
+										</button>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade bd-example-modal-lg" id="gitblog-modal" tabindex="-1" role="dialog" aria-labelledby="git-ting" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="gitblog-modal-title">The subtle science of git-ting it done</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p>
+														Everyone's been there. You and your friends find a magical pair of pants, on the last summer before college. That might be a book. Anyway, you all want these pants, to work them, show off how fantastic they make you look. What if the pants were a piece of code? Maybe a fashion app? You all love it, want to work, but unlike pants, you can all work on it at once! How does <i>this</i> magic work? Version control! It's this magical ability to have a central file, and everyone can control their own version.
+													</p>
+													<p>
+														<strong>What are the benefits of version control?</strong>
+														<br/>Well, say you're writing code for a pants design app. Becky can write the section on bedazzling and merge it with the larger files. At the same time, Paula can present her code regarding plotting pleats in pants. The real benefit is allowing everyone to create versions separately, on their own local machines, and merge them into one document.
+													</p>
+													<p>
+														<strong>How does git help you keep track of changes?</strong>
+														<br/>Now, git is your new coding best friend when it comes to version control. It keeps track of the changes you've made. If a file is changed, saved again, new folders made, it keeps track. Anytime you are in your repository [The place where you store your code], you can check your git status by typing just that. You know quickly what changes have been made. Then you just type git add and tell them which file you are ready to commit [which means to make it the master copy as it were], and commit them each.
+													</p>
+													<p>
+														<strong>Why use GitHub to store your code?</strong>
+														<br/>GitHub is really well structured to work alongside your git. It also allows for cross-Internet collaboration. As well, GitHub enables others to view your code, offer suggestions and to allow you to see others work and use them to improve or assist your own.
+													</p>
+													<p>
+														<strong>That's why we do this!</strong>
+														<br/>Dev Bootcamp is an environment where everyone wants everyone to succeed. Using version control, git and GitHub to enchance our communication and our community is just one step in creating greatness!
+													</p>
+													<p>
+														<strong>Thanks for reading!</strong>
+														<br/>Have a fantastic day!
+													</p>
+
+													<small class="text-muted">November 15, 2015</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--gitbutton ends -->
+									<!-- building ruby classes starts -->
+									<div class="blog-buttons p-2 bd-highlight">
+										<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#rubyClasses-modal">
+											Building a Class in Ruby
+										</button>
+									</div>
+									<!-- ruby classesModal -->
+									<div class="modal fade bd-example-modal-lg" id="rubyClasses-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="rubyClasses-modal-title">What is involved in making a Class?</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p>
+														First, let's break down what a <span class="upper-bold">class</span> is. A <span class="upper-bold">class</span> is a type of <span class="upper-bold">Object</span> - like a <span class="upper-bold">String</span> or an <span class="upper-bold">Array</span>. You make a class so that you can make repetitive methods, and new variables, without having to do all this repeatedly. First you choose a class name. 
+													</p>
+													<div class="Ruby">
+														<code class="pre-set">
+															<span class="variable-set-green">class</span> <span class="variable-set-red">Gamer</span>
+														</code>
+													</div>
+													<p>
+														Excellent. we've created the <span class="upper-bold">Gamer</span> class! with this class, we will be able to check on our gamer friends. First, though, we have to initialize!
+													</p>
+													<div class="Ruby">
+														<code class="pre-set">
+															<span class="variable-set-green">def</span> <span class="variable-set-blue">initialize</span>(<span class="variable-set-green">name</span>, library)
+														</code>
+													</div>
+													<p>
+														So we call the initialize method, which is the default for the creation of the method. Here we've also asked for the name of the Gamer and their game library to create your Gamer object.
+													</p>
+													<div class="Ruby">
+														<code class="pre-set">
+															<span class="variable-set-blue">@playing</span> = <span class="variable-set-blue">false</span><br />
+															<span class="variable-set-blue ml-2">@library</span> = library<br />
+															<span class="variable-set-blue ml-2">@name</span> = <span class="variable-set-green">name</span><br />
+															<span class="variable-set-green">end</span><br />
+														</div>
+													</code>
+													<p>
+														Here, we set the inputs to <span class="upper-bold">instance variables</span>. <span class="upper-bold">instance variables</span> are different from <span class="upper-bold">local variables</span> because they can transcend methods, and be used at any time. Local variables don't exist outside the methods they are called in. This makes instance variables more  useful to store information across our class. But now what?</p>
+														<h5>
+															DANCE CLASS, DANCE
+														</h5>
+														<p>
+															Now we have to write things that this class can DO! After all, what's a gamer who doesn't game? They're not whole without a console to game upon. I know! Let's give them the ability to take a game and play it.
+														</p>
+														<div class="Ruby"> 
+															<code>
+																<span class="variable-set-green">def</span> <span class="variable-set-blue">play_game</span>(request, console)<br />
+																<span class="variable-set-blue ml-2">@console</span> = console<br />
+																<span class="variable-set-blue ml-2">@library</span>.each {|item|<br />
+																<span class="variable-set-green ml-3">if</span> item != request<br />
+																<span class="variable-set-green ml-4">return</span> <span class="in-string">&quot;#{</span><span class="variable-set-blue">@name</span><span class="in-string">} doesn&#39;t own that game!&quot;</span><br />
+																<span class="variable-set-green ml-3">else</span><br />
+																<span class="variable-set-blue ml-4">@game</span> = request<br />
+																<span class="variable-set-blue ml-4">@playing</span> = <span class="variable-set-blue">true</span><br />
+																<span class="variable-set-green ml-4">return</span> <span class="in-string">&quot;#{</span><span class="variable-set-blue">@name</span><span class="in-string">} is now playing #{</span><span class="variable-set-blue">@game</span><span class="in-string">} on their #{</span><span class="variable-set-blue">@console</span><span class="in-string">}&quot;</span><br />
+																<span class="variable-set-green ml-3">end</span><br />
+																<span class=" ml-2">}</span><br />
+																<span class="variable-set-green">end</span>
+															</code>
+														</div>
+														<p>
+															Ok, whoa. That's a lot of info. Let's talk about what is actually going on here. First, we take the request [and set the console to a <span class="upper-bold">instance variable</span> so we can have it any time] and make sure the <span class="upper-bold">Gamer</span> has the game! Otherwise we return the fact that they don't to the method. If they DO have it, we breakout another instance variable, this time <span class="upper-bold">@game</span>, and change our variable from the initialization of the method <span class="upper-bold">@playing</span> to true. Why? Because Later we're going to write method to check what's being played and a method to stop playing. Anyway, then we return a string saying what the gamer is now playing. But what if we want them to stop?
+														</p>
+														<div class="Ruby">
+															<code>
+																<span class="variable-set-green">def</span> <span class="variable-set-blue">stop_playing</span>(reason)<br />
+																<span class="variable-set-blue ml-2">@playing</span> = <span class="variable-set-blue">false</span><br />
+																<span class="variable-set-blue ml-2">@reason</span> = reason<br />
+																<span class="variable-set-green ml-2">return</span> <span class="in-string">&quot;#{</span><span class="variable-set-blue">@name</span><span class="in-string">}stopped playing, because #{</span><span class="variable-set-blue">@reason</span><span class="in-string">}&quot;</span><br />
+																<span class="variable-set-green">end</span><br />
+															</code>
+														</div>
+														<p>
+															So, this is a pretty straight forward method. Very readable, if I do say so myself (Yeah, obviously I do but I'm still proud of it). You give a reason as an input for the <span class="upper-bold">Gamer</span> to stop playing, and they will! Perhaps it's unneeded to store the input reason as <span class="upper-bold">@reason</span>, but we do repeat it later on when someone asks us if we're not playing. In fact, let's look at a method I cooked up for that! 
+														</p>
+														<div class="Ruby">
+															<code>
+																<span class="variable-set-green">def</span> <span class="variable-set-blue">is_playing?</span>()<br />
+																<span class="variable-set-green ml-2">if</span> <span class="variable-set-blue">@playing</span> => <span class="variable-set-blue">true</span><br />
+																<span class="variable-set-green ml-3">return</span> <span class="in-string">&quot;#{</span><span class="variable-set-blue">@name</span><span class="in-string">} is still playing #{</span><span class="variable-set-blue">@game</span><span class="in-string">} on their #{</span><span class="variable-set-blue">@console</span><span class="in-string">}&quot;</span><br />
+																<span class="variable-set-green ml-2">elsif</span> <span class="variable-set-blue">@reason</span> !> <span class="variable-set-blue">nil</span><br />
+																<span class="variable-set-green ml-3">return</span> <span class="in-string">&quot;#{</span><span class="variable-set-blue">@name</span><span class="in-string">} isn&#39;t playing anything because </span><span style="background-color: #eeeeee">#{</span><span class="variable-set-blue">@reason</span><span class="in-string">}!&quot;</span><br />
+																<span class="variable-set-green ml-2">else</span><br />
+																<span class="variable-set-green ml-3">return</span> <span class="in-string ">&quot;#{</span><span class="variable-set-blue">@name</span><span class="in-string">} isn&#39;t playing anything yet!&quot;</span><br />
+																<span class="variable-set-green ml-2">end</span><br />
+																<span class="variable-set-green">end</span><br />
+															</code>
+														</div>
+														<p>
+															Here we go again, one of those fancy flip methods. Let's go through <span class="upper-bold">is_playing</span> if by if. <span class="upper-bold">If</span> the <span class="upper-bold">Gamer</span> is playing something, we return it. <span class="upper-bold">If</span> the gamer has a <span class="upper-bold">@reason</span> for not playing, we return that. Otherwise, we let them know that <span class="upper-bold">Gamer</span> isn't playing anything! That's all I have planned for this class! I guess that's all? Oh WAIT
+														</p>
+														<div class="Ruby">
+															<code>
+																<span class="variable-set-green">end</span>
+															</code>
+														</div>
+														<p>
+															Classes need <span class="upper-bold">end</span>s too, otherwise you'll get some gnarly errors. Well, that's it. <span class="upper-bold">Gamer</span> class built. Nothing else to do. Right? WRONG. The best thing you can do for a class you just wrote is test it. This is called <span class="upper-bold">driver code</span>! It allows you to look at some examples of your code. So let's initialize some examples:
+														</p>
+														<div class="Ruby">
+															<code>
+																<span class="variable-set-blue">JonJon</span> = <span class="variable-set-blue">Gamer</span>.new(<span class="in-string">&quot;Jon&quot;</span>, [<span class="in-string">&quot;SR3&quot;</span>, <span class="in-string">&quot;Star Wars&quot;</span>])<br />
+																<span class="variable-set-blue">Lauren</span> = <span class="variable-set-blue">Gamer</span>.new(<span class="in-string">&quot;Lauren&quot;</span>, [<span class="in-string">&quot;Fallout 4&quot;</span>,<span class="in-string">&quot;DA:Origins&quot;</span>, <span class="in-string">&quot;Hyrule Warriors&quot;</span>, <span class="in-string">&quot;Rare Replay&quot;</span>])
+															</code>
+														</div>
+														<p> 
+															Look! We made <span class="upper-bold">Gamer</span>s! Tey've got names and a library of games.. but do the methods work?
+														</p>
+														<div class="Ruby">
+															<code>
+																<span class="variable-set-green">p</span> <span class="variable-set-blue">JonJon</span>.play_game(<span class="in-string">&quot;SR3&quot;</span>,<span class="in-string">&quot;XBox360&quot;</span>)<br />
+																<span class="variable-set-green">p</span> <span class="variable-set-blue">JonJon</span>.is_playing?()<br />
+																<span class="variable-set-green">p</span> <span class="variable-set-blue">JonJon</span>.stop_playing(<span class="in-string">&quot;CUZ&quot;</span>)<br />
+																<span class="variable-set-green">p</span> <span class="variable-set-blue">JonJon</span>.is_playing?()<br />
+																<span class="variable-set-green">p</span> <span class="variable-set-blue">Lauren</span>.play_game(<span class="in-string">&quot;Star Wars&quot;</span>,<span class="in-string">&quot;XBox360&quot;</span>)<br />
+																<span class="variable-set-green">p</span> <span class="variable-set-blue">Lauren</span>.is_playing?()<br />
+															</code>
+														</div>
+														<p>
+															First, we print them to the screen so we can verify that the methods work! Do they? Yes! We get the correct answer. If you don't believe me, ask the dishes. Er, or you can ruby it. Trust me :)
+														</p>
+														<p>
+															So that's it! We made a <span class="upper-bold">GAMER</span> class. Now you know how to build classes, initialize, the difference between local and instance variables, and much more! If you need anymore information, feel free to contact me! Have a great day!
+														</p>
+														<small class="text-muted">Dec 19, 2015</small>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end ruby start arrays v hashes -->
+										<div class="blog-buttons p-2 bd-highlight">
+											<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#arraysAndHashes-modal">
+												Arrays Vs. Hashes
+											</button>
+										</div>
+										<!-- Modal -->
+										<div class="modal fade bd-example-modal-lg" id="arraysAndHashes-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+											<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="arraysAndHashes-modal-title">Let's Re-iterate It!</h4>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<h5>
+															What is an Array?
+														</h5>
+														<p>
+															Arrays are a structured and ordered list. You can put any object in an Array. It's basically like placing numbered bullets in a gun. They are all going to come out in the same order. You can pop or push them out to rearrange or discard them. However, they aren't really linked to any other values. The bonus to being so firmly ordered is that it makes them easy to manipulate by order. You could have lemmings_array, and use the iterator to have them do something.
+														</p>
+														<div class="Ruby">
+															<code class="pre-set">
+																lemmings_array.each do |lemmings| <br />
+																<span class="ml-3"> # something inane, because lemmings</span><br />
+																end
+															</code>
+														</div>
+														<p>
+															But you can also iterate over a hash with .each which leads us to...
+														</p>
+														<h5>What is a Hash?</h5>
+														<p>
+															Hashes are lists of items. They are paired, one key goes to a value. You give a key and get a value, like a dictionary. Now keys are unique - keys cannot have more than one value. However one value can have many keys. For example, if we were to use characters from the musical Hamilton as keys, we could see the values:
+														</p>
+														<div class="Ruby">
+															<code class="pre-set">
+																cast_ham = { <br />
+																<span class="ml-3">"Hamilton" => "writes like he is running out of time",</span>
+																<br />
+																<span class="ml-3">"Burr" => "talk less, smile more",</span>
+																<br />
+																<span class="ml-3">"my country" => "young, scrappy, and hungry",</span>
+																<br />
+																<span class="ml-3">"Lafayette" => "America's favorite fighting Frenchman",</span>
+																<br />
+																<span class="ml-3">"Angelica" => "Looking for a mind at work (WERK)",</span>
+																<br />
+																<span class="ml-3">"Eliza" => "Let historians wonder how Eliza felt"</span>
+																<br />
+															}
+														</code>
+													</div>
+													<h5>Differences!</h5>
+													<p>
+														Now, to emphasize the differences - Arrays are singular objects in a very hierarchal and manipulative order. Hashes are a loose [only in recent iterations of Ruby are they even remotely ordered] collection of paired items - like a dictionary.
+													</p>
+													<small class="text-muted">Dec 6, 2015</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- new button section starts -->
+									<div class="blog-buttons p-2 bd-highlight">
+										<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#enumberables-modal">
+											#Cycle thru Enumerables
+										</button>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade bd-example-modal-lg" id="enumberables-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="enumberables-modal-title">Going Through the Module cycle</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<h5>
+														What is Enumerable?
+													</h5>
+													<p>
+														Enumerable is a module, which is a mixin class that you can plug in, without it needing to be of a certain parentage. These classes of methods are for searching and traversing things. Ruby is fairly unique as a programming language, because it allows for these mixin modules. Basically, say there is a child of family X. Now being a child of X endows them with certain things, like a large bank account or trusting manservant. But if they wanted to fight crime, X child would have to get outside help, like from module Assassin or Vigilante. Then they could use all of the things in that module to fight crime or save their city.
+													</p>
+													<p>
+														For example, .injustice?(x) is a public instance method of module Vigilante that allows for sorting unjust events.
+													</p>
+													<div class="Ruby">
+														<code class="pre-set">
+															puts x_child.injustice?(list_of_events) <br/>
+															end
+														</code>
+													</div>
+													<p>
+														Now that we understand modules, mixins and Enumerable, let's move on!
+													</p>
+													<h5>What does #cycle do?</h5>
+													<p>
+														Cycle is a public instance method of Enumerable. It's used to cycle through an array. If you pass it a number, that's the toal number of times it will cycle through an array. You can also pair it with other items, like to go backwards through an array 3 times, you could do [1,2,3].reverse_each.cycle(3) and you'd get [3,2,1,3,2,1,3,2,1].
+													</p>
+													<h5>So in Summary</h5>
+													<p>
+														You can us enumerable methods to iterate and sort and seperate and do all kinds of neat stuff, because Ruby likes to let all the mixins and modules and code get together. It really allows for a great customization.
+													</p>
+													<small class="text-muted">Dec 11, 2016</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- new section ends -->
+									<!-- new JSvsRuby section starts -->
+									<div class="blog-buttons p-2 bd-highlight">
+										<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#JSvsRuby-modal">
+											JavaScript vs Ruby
+										</button>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade bd-example-modal-lg" id="JSvsRuby-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="JSvsRuby-modal-title">Function-ing Well vs Being Method-ical.</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<h5>What are these things, JAH-VAH-SCKRIPT and ROO-BEE? </h5>
+													<p>
+														Ok, let's start by defining some terms. JavaScript and Ruby are programming languages. They're languages programmers use to talk to computers. They are both Object-oriented, so they provide the ability to make objects within the code and then code to do stuff with those objects. Objects can be numbers, arrays, or words (in coding, they're called "strings" and usually seen between "these handy quotes"). Many programming codes share similarities. JavaScript (herein referred to as JS for short) and Ruby both have similar loops, similar objects, use numbers. There are some differences, however. For example, functions vs methods.
+													</p>
+													<h5>Is this where your punny subtitle comes in?</h5>
+													<p>
+														Oh how KIND of you to notice. Yes, here it is. So, let's start with functions. JS functions are bits of code that take an input (like "bubbles"), evaluate it and return a value(like "OOPS POPPED IT."). Got it? Now Ruby has these things called methods. They take input, evaluate it and return a value. Sounds familiar, right?
+													</p>
+													<h5>...they're the same.</h5>
+													<p>
+														No. See, they handle their operations differently. As Nick/Skilldrick <a href="http://skilldrick.co.uk/2010/09/why-javascript-is-awesome/">wrote</a> "A language like Ruby is a toolbox with some really neat little tools that do their job really nicely. JavaScript is a leather sheath with a really really sharp knife inside." I like this analogy, because it explains many of the chief differences between the two, including those that many of my classmates have covered. In terms of functioning, though, JS is again, very straightforward. You make the function, it does the thing. Done. You can pretty much declare internal objects outside the function. Methods are different in terms of changing, or adding anything. There's also a difference between Blocks, procs and lambda methods (for more on that check out <a href="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/">this article</a> or <a href="http://skilldrick.co.uk/2011/01/ruby-vs-javascript-functions-procs-blocks-and-lambdas/">this</a>). 
+													</p>
+													<h5>So, sum this up for me?</h5>
+													<p>
+														Basically, JS and Ruby are two languages, both alike in object orientation. From these civil codes rise new mutiny - differences in how they operate functions. JS uses functions to do all manner of things - one weapon, many uses. Ruby has many different tools for processing these things. They all serve their seperate purposes. Hopefully this illustrates the massive difference between functions and methods. Thanks!
+													</p>
+													<small class="text-muted">Jan 2, 2016</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- JSvsRuby ends -->
+
+
+
+									<div class="blog-buttons p-2 bd-highlight">
+										<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#InlineBlog-modal">
+											Keeping it Inline
+										</button>
+									</div>
+
+									<!-- Modal -->
+									<div class="modal fade bd-example-modal-lg" id="InlineBlog-modal" tabindex="-1" role="dialog" aria-labelledby="InlineBlog" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="InlineBlog-modal-title">Laying Out Inline and Block</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+
+													<p class="h5">What is inline? What is Block?</p>
+													<div>
+														<p>
+															Many elements have a natural block state or inline state. what does this mean? 
+														</p>
+														<p>
+															Inline means that the items are in a line. They do not have padding, they display everything in the same line. They're agile, but they don't really have a border. They're like a speedster in a video game. You can have loads of them, but sometimes they just aren't appropriate for the elements. Haveing all the paragraphs inline wouldn't look so good, right?
+														</p>
+														<p>
+															Block is a different style. it BLOCKS everything from being near it - refuses any other element in the same line. This your tough guy - has a border, but doesn't want anything else on the same line. For example, p has an inherent block style, which is why these paragraphs are all on different lines.
+														</p>
+													</div>
+													<h5>How about inline-block?</h5>
+													<div>
+														<p>
+															This is the code combination of both inline and block, just as the name would imply. Basically, if you want objects next to each other, but still have the ability to push around other elements like a big old block, you need inline-block. It's the all around warrior - it can protect itself but it also has some speed.
+														</p> 
+														<p>
+															Here's an example: The blog sections above are sectioned using inline-block to allow for even-ness all around.
+														</p>
+													</div>
+													<h5>What do we do with a command like inline-block?</h5>
+													<div>
+														<p>
+															The key is to use all of these commands to the best effect. Much like in a raiding party or Mario Kart race, you have to take context into account. Inline is useful if the elements simply need to be next to each other. Block is good if you need borders but nothing else in the same area. Inline is the combo that makes both features available. 
+														</p>
+													</div>
+
+													<small class="text-muted">Sep 29, 2016</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Modal end-->
+									<!-- new button section starts -->
+									<div class="blog-buttons p-2 bd-highlight">
+										<button type="button" class="btn btn-light p-3" data-toggle="modal" data-target="#sqlinjection-modal">
+											Let's talk SQLinjection
+										</button>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade bd-example-modal-lg" id="sqlinjection-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="sqlinjection-modal-title">Don't Drop the Table</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<h5>What is SQL Injection?</h5>
+													<p>
+														A SQL injection is when a malicious user inserts SQL commands or such to attack the database in which they are inserting the commands. First ingredient required is an unsecured SQL database. Then forms to search this database. Using these, hackers can attempt to gain and mainpulate data from the database
+													</p>
+													<h5>How the Attack Works</h5>
+													<img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" class="img-fluid">
+													<p>
+														Basically, if you enter a SQL command in the form for an unsecured data. The mother in the above comic is illustrating that the name she gave her child will result, in any unsecured database, the table of students to be dropped. A hacker could even enter as simple of a comand as "=", given that the could could return true, and give them access.
+													</p>
+													<h5>How to protect Your databases</h5>
+													<p>
+														You could blacklist the inputs that would cause this, however, often the commands, like drop, are legitimate entry options. You wouldn't block someone from looking up "when the bass drops", because we all need to know. Parameterized queries [prepared statements with variable binding] should be used. The use and practice with these will allow the coders to teach the database the differene between data and code. The implementation of this is variable from language to language. <a href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet#Defense_Option_1:_Prepared_Statements_.28with_Parameterized_Queries.29">This article</a> has several recommendations broken down by language. You can also enter code that will escape out of any user entry, but it is frail. This is best saved for legacy code, that needs to be grandfathered in but also kept safe.
+													</p>
+													<h5>Conclusions</h5>
+													<p>
+														When learning to program SQL databases, protect them from malicious attacks by ensuring the database knows code from user input. Research methods to do this, and, if it's legacy code, try to at least escape out. Hopefully this has made things clear for you and you will know, when you go to program SQL databases, where to start. 
+													</p>
+													<small class="text-muted">Jan 8, 2016</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- new section ends -->
+
+								</div>
+								<!-- button row end -->
+
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="aboutcontent">
-		<div class="row" id="about">
+		<div id="aboutcontent">
+			<div class="row" id="about">
 
-			<h2 class="text-center col-sm-12 pb-5">About Me</h2>
-			<div class="col-sm-8">
-				<p>
-					I am a developer, stylist and designer. I pride myself on my ability to create beautiful and meaningful things to clients' specifications. I like to bring spontaneity and creativity to a team, and work to create a solid bond with my coworkers to allow for the best possible working environment.
-				</p>
-				<p>
-					After working as a UI Designer and consultant, I transitioned to development. With my deft hand at empathy, tech wizardry, not to mention fast learning skills, I have hit the ground running. I work hard to ensure I meet not only client's standards, but my own - and they are pixel perfect. 
-				</p>
-				<p>
-					I really love being in a field that really allows me to challenge myself. I do that even now by starting to learn even more languages and frameworks - I’m studying C#, PHP, and ReactJS now. Feel free to reach out 
-				</p> 
-			</div>
-			<div class="col-sm-3">
-				<img src="./imgs/about-profile.jpg"/ alt="" class="img-fluid">
+				<h2 class="text-center col-sm-12 pb-5">About Me</h2>
+				<div class="col-sm-8">
+					<p>
+						I am a developer, stylist and designer. I pride myself on my ability to create beautiful and meaningful things to clients' specifications. I like to bring spontaneity and creativity to a team, and work to create a solid bond with my coworkers to allow for the best possible working environment.
+					</p>
+					<p>
+						After working as a UI Designer and consultant, I transitioned to development. With my deft hand at empathy, tech wizardry, not to mention fast learning skills, I have hit the ground running. I work hard to ensure I meet not only client's standards, but my own - and they are pixel perfect. 
+					</p>
+					<p>
+						I really love being in a field that really allows me to challenge myself. I do that even now by starting to learn even more languages and frameworks - I’m studying C#, PHP, and ReactJS now. Feel free to reach out.
+					</p> 
+				</div>
+				<div class="col-sm-3">
+					<img src="./imgs/about-profile.jpg"/ alt="" class="img-fluid">
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="contactcontent">
-		<div class="row" id="contact">
-			<h2 class="text-center col-sm-12 py-4">Contact</h2>
-<div class="col-xs-1 col-md-2 icons text-center">
-				<a href="https://codepen.io/tomorrow-lauren"><i class="fab fa-codepen"></i></a>
+		<div id="contactcontent" class="d-flex flex-column align-items-stretch">
+			<div class="d-flex justify-content-center" id="contact">
+				<div class="text-center">
+					<h2 class="col-sm-12 p-2">Contact</h2>
+				</div>
 			</div>
-			<div class="col-xs-1 col-md-2 icons text-center">
-				<a href="http://twitter.com/tomorrow_lauren"><i class="fab fa-twitter"></i></a>
-			</div>
-			<div class="col-xs-1 col-md-2 icons text-center">
-				<a href="mailto:lauren.g.reid@gmail.com?Subject=Hello!%20I%20am%20contacting%20you%20via%20your%20website" target="_top" alt="Email to lauren.g.reid@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
-			</div>
-			<div class="col-xs-1 col-md-2 icons text-center">
-				<a href="https://github.com/tomorrow-lauren"><i class="fab fa-github-alt"></i></a>
-			</div>
-			<div class="col-xs-1 col-md-2 icons text-center">
-				<a href="https://www.linkedin.com/in/laurengreid"><i class="fab fa-linkedin"></i></a>
-			</div>
-			<div class="col-xs-1 col-md-2 icons text-center">
-				<a href="#top-up"><i class="far fa-caret-square-up"></i></a>
+			<div class="d-flex justify-content-center" id="contact2">
+				<div class="icons p-2" id="codepenIcon">
+					<a href="https://codepen.io/tomorrow-lauren"><i class="fab fa-codepen"></i></a>
+					<p class="hide">@tomorrow-lauren</p>
+				</div>
+				<div class="icons p-2">
+					<a href="http://twitter.com/tomorrow_lauren"><i class="fab fa-twitter"></i></a>
+					<p class="hide">@tomorrow_lauren</p>
+				</div>
+				<div class="icons p-2">
+					<a href="mailto:lauren.g.reid@gmail.com?Subject=Hello!%20I%20am%20contacting%20you%20via%20your%20website" target="_top" alt="Email to lauren.g.reid@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
+					<p class="hide">lauren.g.reid@gmail.com</p>
+				</div>
+				<div class="icons p-2">
+					<a href="https://github.com/tomorrow-lauren"><i class="fab fa-github-alt"></i></a>
+					<p class="hide">@tomorrow-lauren</p>
+				</div>
+				<div class="icons p-2">
+					<a href="https://www.linkedin.com/in/laurengreid"><i class="fab fa-linkedin"></i></a>
+					<p class="hide">in/laurengreid</p>
+				</div>
+				<div class="icons p-2" id="arrow">
+					<a href="#top-up"><i class="far fa-caret-square-up"></i></a>
+
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+</div>
+
 </body>
 </html>
