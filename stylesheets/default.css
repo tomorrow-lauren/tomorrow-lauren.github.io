@@ -1,3 +1,7 @@
+body{
+  color: #545454;
+}
+
 .bg-dark-custom{
   background-color: #555555;
 }
@@ -18,7 +22,8 @@
   padding: 6%;
   background-size: cover;
 }
-.blog-buttons{
+#blogs-row{
+  flex-wrap: wrap;
 }
 .display{
   background-color: #666;
@@ -58,8 +63,11 @@
   color: #555555;
   padding: 0;
 }
+#contact2{
+  flex-wrap: wrap;
+}
  #contact2 .icons a{
-  font-size: 3rem;
+  font-size: 4rem;
   color: #555555;
  }
  #contact2 .icons a:hover{

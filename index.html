@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -16,19 +16,26 @@
 	<title>Tomorrow's Lauren Today</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom" id="top-up">
-		<a class="navbar-brand" href="#"><img src="imgs/flower.png" class="img-fluid smole-icon"/></a> 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark-custom" id="top-up">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#lauren-reid-navToggler" aria-controls="lauren-reid-navToggler" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a href="#portfolio" class="nav-link">Process & Portfolio</a></li>
-				<li class="nav-item"><a href="#aboutcontent" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+		<a class="navbar-brand" href="#"><img src="imgs/flower.png" class="img-fluid smole-icon" alt="flower icon" /></a>
+
+		<div class="collapse navbar-collapse" id="lauren-reid-navToggler">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+				<li class="nav-item">
+					<a href="#portfolio" class="nav-link">Process & Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#aboutcontent" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link">Contact</a>
+				</li>
 			</ul>
 		</div>
-		<a class="navbar-brand" href="#"><img src="imgs/flower.png" class="img-fluid smole-icon"/></a> 
 	</nav>
 	
 	<div class="jumbotron jumbotron-fluid" id="jumbo">
@@ -47,16 +54,21 @@
 							<h2 class="mb-0">
 								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 									Beginning the Process
-									<span class="fa-stack fa-sm">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-									</span>
+									<div class="d-none d-md-block">
+										<span class="fa-stack fa-sm">
+											<i class="fas fa-circle fa-stack-2x"></i>
+											<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
 								</button>
 							</h2>
 						</div>
 
 						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 							<div class="card-body">
+								<p class="h5">
+									Let's start at the very beginning - a very good place&nbsp;to&nbsp;start.
+								</p>
 								<p>
 									I believe the start of the design process comes with meeting the client. Whether external or internal, learning about their wants and desires is essential to the process. 
 								</p>
@@ -68,7 +80,7 @@
 								</p>
 								<!-- Button trigger modal -->
 								<button type="button" class="btn btn-light py-4" data-toggle="modal" data-target="#process-modal">
-									Click to flip through some process images - wireframes, schemas, etc
+									Click to peruse some process images (wireframes,&nbsp;schemas,&nbsp;etc)
 								</button>
 
 								<!-- Modal -->
@@ -110,58 +122,63 @@
 								</div>
 							</div>
 						</div>
-						<div class="card">
-							<div class="card-header" id="headingTwo">
-								<h2 class="mb-0">
-									<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										Designing Beautiful and Meaningful Things With Others
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Designing Professionally
+									<div class="d-none d-md-block">
 										<span class="fa-stack fa-sm">
 											<i class="fas fa-circle fa-stack-2x"></i>
 											<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
 										</span>
-									</button>
-								</h2>
-							</div>
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-								<div class="card-body">
-									<p class="pb-2">
-										I believe that in design, one must be open to change. On example is the app <a href="https://github.com/msosland/grouVie-react">grouvie</a>. Grouvie was a team project; I took design lead, thanks to my background in design and user experience. I started by crafting a palette, based around the idea person's favorite color. I created a few inital icons, and when we switch some colors around, revamped it to be more legible on a dark background.
-									</p>
-									<button type="button" class="btn btn-light py-4" data-toggle="modal" data-target="#design-modal">
-										The design process for the app
-									</button>
+									</div>
+								</button>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<div class="card-body">
+								<p class="h5">
+									Designing&nbsp;Beautiful and Meaningful&nbsp;Things With&nbsp;Others
+								</p>
+								<p class="pb-2">
+									I believe that in design, one must be open to change. One example is the app <a href="https://github.com/msosland/grouVie-react">grouvie</a>. Grouvie was a team project; I took design lead, thanks to my background in design and user experience. I started by crafting a palette, based around the idea person's favorite color. I created a few inital icons, and when we switch some colors around, revamped it to be more legible on a dark background.
+								</p>
+								<button type="button" class="btn btn-light py-4" data-toggle="modal" data-target="#design-modal">
+									The design process for&nbsp;the&nbsp;app
+								</button>
 
-									<!-- Modal -->
-									<div class="modal fade bd-example-modal-lg" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
-										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="design-modal-title">grouvie Designs and Revisions</h5>
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-														<span aria-hidden="true">&times;</span>
-													</button>
-												</div>
-												<div class="modal-body">
-													
-													<!-- carousel of feedback projects -->
-													<div id="designControls" class="carousel slide" data-ride="carousel">
-														<div class="carousel-inner text-center">
-															<div class="carousel-item active">
-																<p>Palette of colors I took to the team</p>
-																<img class="mx-auto d-block img-fluid" src="imgs/pallette.png" alt="Initial design">
-															</div>
-															<div class="carousel-item">
-																<p>Initial design</p>
-																<img class="mx-auto d-block img-fluid" src="imgs/bright_icon.png" alt="Initial design">
-															</div>
-															<div class="carousel-item">
-																<p>design of icon after feedback</p>
-																<img class="mx-auto d-block img-fluid" src="imgs/darkcon.png" alt="a revamped, more accessible icon">
-															</div>
-															<div class="carousel-item">
-																<p>implemented icon in app</p>
-																<img class="mx-auto d-block img-fluid" src="imgs/grouvie-ss-two.png" alt="icon implemented">
-															</a>
+								<!-- Modal -->
+								<div class="modal fade bd-example-modal-lg" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="WebScreenshots" aria-hidden="true" role="dialog">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="design-modal-title">grouvie Designs and Revisions</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+
+												<!-- carousel of feedback projects -->
+												<div id="designControls" class="carousel slide" data-ride="carousel">
+													<div class="carousel-inner text-center">
+														<div class="carousel-item active">
+															<p>Palette of colors I took to the team</p>
+															<img class="mx-auto d-block img-fluid" src="imgs/pallette.png" alt="Initial design">
+														</div>
+														<div class="carousel-item">
+															<p>Initial design</p>
+															<img class="mx-auto d-block img-fluid" src="imgs/bright_icon.png" alt="Initial design">
+														</div>
+														<div class="carousel-item">
+															<p>design of icon after feedback</p>
+															<img class="mx-auto d-block img-fluid" src="imgs/darkcon.png" alt="a revamped, more accessible icon">
+														</div>
+														<div class="carousel-item">
+															<p>implemented icon in app</p>
+															<img class="mx-auto d-block img-fluid" src="imgs/grouvie-ss-two.png" alt="icon implemented">
 														</div>
 														<div class="carousel-item">
 															<p>implemented color design in app</p>
@@ -192,11 +209,13 @@
 						<div class="card-header" id="headingThree">
 							<h2 class="mb-0">
 								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Active Sites/Code that I Have Worked On
-									<span class="fa-stack fa-sm">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-									</span>
+									Active Code Portfolio		
+									<div class="d-none d-md-block">
+										<span class="fa-stack fa-sm">
+											<i class="fas fa-circle fa-stack-2x"></i>
+											<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
 								</button>
 							</h2>
 						</div>
@@ -275,16 +294,18 @@
 							</div>
 						</div>
 					</div>
-					<!-- car end -->
+					<!-- card end -->
 					<div class="card">
 						<div class="card-header" id="headingFour">
 							<h2 class="mb-0">
 								<button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 									Blogs!
-									<span class="fa-stack fa-sm">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-									</span>
+									<div class="d-none d-md-block">
+										<span class="fa-stack fa-sm">
+											<i class="fas fa-circle fa-stack-2x"></i>
+											<i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
 								</button>
 							</h2>
 						</div>
@@ -294,7 +315,7 @@
 									One of my favorite requirements in my bootcamp, writing blogs always solidifies what I am learning. I am proud of the work that I put into these those many years ago, and I hope that you learn something, or at least enjoy my attempts at humor within them. Going forward, as I continue to learn, I plan to write more. 
 								</p>
 								<!--row of buttons -->
-								<div class="d-flex justify-content-center bd-highlight mb-3">
+								<div class="d-flex justify-content-center bd-highlight mb-3" id="blogs-row">
 									<!-- new git section starts -->
 
 									<div class="blog-buttons p-2 bd-highlight">
@@ -385,8 +406,8 @@
 															<span class="variable-set-blue ml-2">@library</span> = library<br />
 															<span class="variable-set-blue ml-2">@name</span> = <span class="variable-set-green">name</span><br />
 															<span class="variable-set-green">end</span><br />
-														</div>
-													</code>
+														</code>
+													</div>
 													<p>
 														Here, we set the inputs to <span class="upper-bold">instance variables</span>. <span class="upper-bold">instance variables</span> are different from <span class="upper-bold">local variables</span> because they can transcend methods, and be used at any time. Local variables don't exist outside the methods they are called in. This makes instance variables more  useful to store information across our class. But now what?</p>
 														<h5>
@@ -709,7 +730,7 @@
 														A SQL injection is when a malicious user inserts SQL commands or such to attack the database in which they are inserting the commands. First ingredient required is an unsecured SQL database. Then forms to search this database. Using these, hackers can attempt to gain and mainpulate data from the database
 													</p>
 													<h5>How the Attack Works</h5>
-													<img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" class="img-fluid">
+													<img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" class="img-fluid" alt="a xkcd comic about a mom who named her child after a common SQL exploit">
 													<p>
 														Basically, if you enter a SQL command in the form for an unsecured data. The mother in the above comic is illustrating that the name she gave her child will result, in any unsecured database, the table of students to be dropped. A hacker could even enter as simple of a comand as "=", given that the could could return true, and give them access.
 													</p>
@@ -737,61 +758,64 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
 
-		<div id="aboutcontent">
-			<div class="row" id="about">
+<div id="aboutcontent">
+	<div class="row" id="about">
 
-				<h2 class="text-center col-sm-12 pb-5">About Me</h2>
-				<div class="col-sm-8">
-					<p>
-						I am a developer, stylist and designer. I pride myself on my ability to create beautiful and meaningful things to clients' specifications. I like to bring spontaneity and creativity to a team, and work to create a solid bond with my coworkers to allow for the best possible working environment.
-					</p>
-					<p>
-						After working as a UI Designer and consultant, I transitioned to development. With my deft hand at empathy, tech wizardry, not to mention fast learning skills, I have hit the ground running. I work hard to ensure I meet not only client's standards, but my own - and they are pixel perfect. 
-					</p>
-					<p>
-						I really love being in a field that really allows me to challenge myself. I do that even now by starting to learn even more languages and frameworks - I’m studying C#, PHP, and ReactJS now. Feel free to reach out.
-					</p> 
-				</div>
-				<div class="col-sm-3">
-					<img src="./imgs/about-profile.jpg"/ alt="" class="img-fluid">
-				</div>
-			</div>
+		<h2 class="text-center col-sm-12 pb-5">About Me</h2>
+		<div class="col-sm-8">
+			<p>
+				I am a developer, stylist and designer. I pride myself on my ability to create beautiful and meaningful things to clients' specifications. I like to bring spontaneity and creativity to a team, and work to create a solid bond with my coworkers to allow for the best possible working environment.
+			</p>
+			<p>
+				After working as a UI Designer and consultant, I transitioned to development. With my deft hand at empathy, tech wizardry, not to mention fast learning skills, I have hit the ground running. I work hard to ensure I meet not only client's standards, but my own - and they are pixel perfect. 
+			</p>
+			<p>
+				I really love being in a field that really allows me to challenge myself. I do that even now by starting to learn even more languages and frameworks - I’m studying C#, WordPress, and Vue now. Feel free to reach out.
+			</p> 
 		</div>
-		<div id="contactcontent" class="d-flex flex-column align-items-stretch">
-			<div class="d-flex justify-content-center" id="contact">
-				<div class="text-center">
-					<h2 class="col-sm-12 p-2">Contact</h2>
-				</div>
-			</div>
-			<div class="d-flex justify-content-center" id="contact2">
-				<div class="icons p-2" id="codepenIcon">
-					<a href="https://codepen.io/tomorrow-lauren"><i class="fab fa-codepen"></i></a>
-					<p class="hide">@tomorrow-lauren</p>
-				</div>
-				<div class="icons p-2">
-					<a href="http://twitter.com/tomorrow_lauren"><i class="fab fa-twitter"></i></a>
-					<p class="hide">@tomorrow_lauren</p>
-				</div>
-				<div class="icons p-2">
-					<a href="mailto:lauren.g.reid@gmail.com?Subject=Hello!%20I%20am%20contacting%20you%20via%20your%20website" target="_top" alt="Email to lauren.g.reid@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
-					<p class="hide">lauren.g.reid@gmail.com</p>
-				</div>
-				<div class="icons p-2">
-					<a href="https://github.com/tomorrow-lauren"><i class="fab fa-github-alt"></i></a>
-					<p class="hide">@tomorrow-lauren</p>
-				</div>
-				<div class="icons p-2">
-					<a href="https://www.linkedin.com/in/laurengreid"><i class="fab fa-linkedin"></i></a>
-					<p class="hide">in/laurengreid</p>
-				</div>
-				<div class="icons p-2" id="arrow">
-					<a href="#top-up"><i class="far fa-caret-square-up"></i></a>
-
-				</div>
-			</div>
+		<div class="col-sm-3">
+			<img src="./imgs/about-profile.jpg"/ alt="" class="img-fluid">
 		</div>
 	</div>
+</div>
+<div id="contactcontent" class="d-flex flex-column align-items-stretch">
+	<div class="d-flex justify-content-center" id="contact">
+		<div class="text-center">
+			<h2 class="col-sm-12 p-2">Find me on the Internet!</h2>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center" id="contact2">
+		<div class="icons p-2" id="codepenIcon">
+			<a href="https://codepen.io/tomorrow-lauren"><i class="fab fa-codepen"></i></a>
+			<p class="hide">@tomorrow-lauren</p>
+		</div>
+		<div class="icons p-2">
+			<a href="http://twitter.com/tomorrow_lauren"><i class="fab fa-twitter"></i></a>
+			<p class="hide">@tomorrow_lauren</p>
+		</div>
+		<div class="icons p-2">
+			<a href="mailto:lauren.g.reid@gmail.com?Subject=Hello!%20I%20am%20contacting%20you%20via%20your%20website" target="_top" alt="Email to lauren.g.reid@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
+			<p class="hide">lauren.g.reid@gmail.com</p>
+		</div>
+		<div class="icons p-2">
+			<a href="https://github.com/tomorrow-lauren"><i class="fab fa-github-alt"></i></a>
+			<p class="hide">@tomorrow-lauren</p>
+		</div>
+		<div class="icons p-2">
+			<a href="https://www.linkedin.com/in/laurengreid"><i class="fab fa-linkedin"></i></a>
+			<p class="hide">in/laurengreid</p>
+		</div>
+		<div class="icons p-2" id="arrow">
+			<a href="#top-up"><i class="far fa-caret-square-up"></i></a>
+			<p class="hide">back to the top</p>
+
+		</div>
+	</div>
+</div>
+</div>
 </div>
 </div>
 
